@@ -5,10 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 悉尼AMD1, server: vps1.neqe.top, port: 53124, type: vmess, uuid: 16443cd4-4374-4e48-a2c9-0c258bd71ee9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /JGKE, headers: {}}, udp: true}
+  - {name: 悉尼AMD1, server: vps1.neqe.top, port: 46320, type: vless, uuid: 443c1b46-adb3-49bf-fce8-2938504baba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: tcp, ws-opts: {path: /, headers: {}}, udp: true}
   - {name: 悉尼AMD2, server: vps2.neqe.top, port: 13458, type: vmess, uuid: ebfe2beb-0e12-431a-8c10-efc453fe0a27, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /IHU, headers: {}}, udp: true}
-  - {name: 悉尼ARM1, server: arm1.neqe.top, port: 45893, type: vmess, uuid: 99c40277-5d0f-44fb-ac62-24354240ff5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /SLEI, headers: {}}, udp: true}
-  - {name: 悉尼ARM2, server: arm2.neqe.top, port: 45796, type: vmess, uuid: 3b561bbc-6b55-4f91-9b9f-e402c3733eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /DETY, headers: {}}, udp: true}
+  - {name: 悉尼ARM1, server: arm1.neqe.top, port: 24683, type: vmess, uuid: 99c40277-5d0f-44fb-ac62-24354240ff5a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /SLEI, headers: {}}, udp: true}
+  - {name: 悉尼ARM2, server: arm2.neqe.top, port: 46789, type: vmess, uuid: 3b561bbc-6b55-4f91-9b9f-e402c3733eb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /DETY, headers: {}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
